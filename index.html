@@ -10,19 +10,33 @@
     <title>카카오</title>
     <link rel="stylesheet" href="css/reset.css">
     <style>
-        .header{}
+        .header{position:fixed;left:0;top:0;width:100%;background:white;}
         .header li{float:left;}
-        .header>.row{height:50px;padding:10px;}
+        .header>.row{box-sizing:border-box;height:50px;padding:3px 10px;}
         .header>.row>div{float:left;}
-        .header>.row>.main_logo{}
-        .header>.row>.nav{}
-        
-        .header>.row>.lang{}
+        .main_logo{width:200px;}
+        .main_logo a{font-weight:bold;font-size:39px;color:#111;}
+        .nav{width:770px;margin-top:10px;}
+        .nav li{margin-right:54px;}
+        .nav li:last-child{margin-right:0;}
+        .nav li>a{font-weight:bold;font-size:23px;color:#111;}
+        .nav li>a:hover{border-bottom:2px solid #111;}
+        .lang{width:170px;margin-left:30px;margin-top:10px;}
+        .lang>ul{}
+        .lang li{width:70px;}
+        .lang li:first-child{margin-right:30px;text-align:right;}
+        .lang li:first-child>a:hover{color:#a9a9a9;}
+        .lang li:last-child{text-align:left;}
+        .lang a{font-size:24px;color:#111;}
+        .lang li:last-child>a{color:#a9a9a9;}
+        .lang li:last-child>a:hover{color:#111;}
 
-        .banner{}
-        .content01{}
-        .content02{}
-        .footer{}
+
+
+        .banner{height:200px;background:red;}
+        .content01{height:200px;background:green;}
+        .content02{height:200px;background:blue;}
+        .footer{height:200px;background:yellow;}
     </style>
 </head>
 <body>
@@ -36,8 +50,8 @@
                         </a>
                     </h1>
                 </div>
-                <div>
-                    <nav class="nav">
+                <div class="nav">
+                    <nav>
                         <ul class="clearfix">
                             <li><a href="#">카카오</a></li>
                             <li><a href="#">투자정보</a></li>
