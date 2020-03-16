@@ -8,6 +8,16 @@
     <!-- iOS 파비콘 -->
     <link rel="apple-touch-icon-precomposed" href="favicon.png">
     <title>카카오</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider();
+      });
+    </script>
+
     <link rel="stylesheet" href="css/reset.css">
     <style>
         .header{position:fixed;left:0;top:0;width:100%;background:white;}
@@ -22,7 +32,6 @@
         .nav li>a{font-weight:bold;font-size:23px;color:#111;}
         .nav li>a:hover{border-bottom:2px solid #111;}
         .lang{width:170px;margin-left:30px;margin-top:10px;}
-        .lang>ul{}
         .lang li{width:70px;}
         .lang li:first-child{margin-right:30px;text-align:right;}
         .lang li:first-child>a:hover{color:#a9a9a9;}
@@ -30,8 +39,6 @@
         .lang a{font-size:24px;color:#111;}
         .lang li:last-child>a{color:#a9a9a9;}
         .lang li:last-child>a:hover{color:#111;}
-
-
 
         .banner{height:200px;background:red;}
         .content01{height:200px;background:green;}
@@ -70,7 +77,14 @@
                 </div>
             </div>
         </header>
-        <section class="banner"></section>
+        <section class="banner">
+            <div class="slider">
+                <div style="text-align:center;font-size:36px;">banner01</div>
+                <div style="text-align:center;font-size:36px;">banner02</div>
+                <div style="text-align:center;font-size:36px;">banner03</div>
+                <div style="text-align:center;font-size:36px;">banner04</div>
+            </div>
+        </section>
         <section class="content01"></section>
         <section class="content02"></section>
         <footer class="footer"></footer>
