@@ -14,7 +14,12 @@
   
     <script>
       $(document).ready(function(){
-        $('.slider').bxSlider();
+        $('.slider').bxSlider({
+            mode:'fade',
+            speed:1000,
+            auto:true,
+            pause:1000,
+        });
       });
     </script>
 
@@ -40,18 +45,17 @@
         .lang li:last-child>a{color:#a9a9a9;}
         .lang li:last-child>a:hover{color:#111;}
 
-        .banner{height:760px;margin-top:50px;overflow:hidden;}
-        .banner>.slider{}
+        .banner{margin:50px 0;overflow:hidden;}
+        .bx-wrapper{box-shadow:none;border:none;margin-bottom:0;}
+        .bx-wrapper .bx-pager{display:none;}
+        .bx-wrapper .bx-controls-direction a{z-index:99;}
         .banner>.slider>div{position:relative;}
-        .banner>.slider>div>img{}
-        .banner_txt{position:absolute;left:135px;top:80px;}
+        .banner_txt{position:absolute;left:50%;top:80px;transform:translateX(-50%);}
         .banner_txt>p{font-weight:bold;font-size:36px;color:white;margin-bottom:40px;}
         .banner_btn{width:170px;height:50px;background:white;}
         .banner_btn>p{font-weight:bold;color:#111;line-height:50px;}
         .banner_btn>p:first-child{float:left;font-size:24px;margin-left:16px;}
         .banner_btn>p:last-child{float:right;font-size:16px;margin-right:16px;}
-        .banner>.slider>div>.banner_txt>p{}
-        .banner>.slider>div>.banner_txt>.banner_btn{}
 
 
         .sec_cont{margin-bottom:50px;}
