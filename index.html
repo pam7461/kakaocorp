@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <style>
-        .header{position:fixed;left:0;top:0;width:100%;background:white;}
+        .header{position:fixed;left:0;top:0;z-index:100;width:100%;border-bottom:1px solid #a9a9a9;background:white;}
         .header li{float:left;}
         .header>.row{box-sizing:border-box;height:50px;padding:3px 10px;}
         .header>.row>div{float:left;}
@@ -40,20 +40,26 @@
         .lang li:last-child>a{color:#a9a9a9;}
         .lang li:last-child>a:hover{color:#111;}
 
-        /* .banner{height:760px;margin-top:50px;overflow:hidden;}
+        .banner{height:760px;margin-top:50px;overflow:hidden;}
         .banner>.slider{}
         .banner>.slider>div{position:relative;}
         .banner>.slider>div>img{}
-        .banner_txt{position:absolute;left:0;top:0;}
+        .banner_txt{position:absolute;left:135px;top:80px;}
+        .banner_txt>p{font-weight:bold;font-size:36px;color:white;margin-bottom:40px;}
+        .banner_btn{width:170px;height:50px;background:white;}
+        .banner_btn>p{font-weight:bold;color:#111;line-height:50px;}
+        .banner_btn>p:first-child{float:left;font-size:24px;margin-left:16px;}
+        .banner_btn>p:last-child{float:right;font-size:16px;margin-right:16px;}
         .banner>.slider>div>.banner_txt>p{}
-        .banner>.slider>div>.banner_txt>.banner_btn{} */
+        .banner>.slider>div>.banner_txt>.banner_btn{}
+
+
         .sec_cont{margin-bottom:50px;}
         .sec_cont>.row>li{float:left;width:370px;margin:0 15px;}
         .sec_cont h4{margin-bottom:20px;font-family:'Roboto';font-size:12px;color:#111;}
         .sec_cont h5{margin-bottom:10px;font-size:20px;color:#111;line-height:30px;}
         .sec_cont p{font-size:13px;line-height:20px;color:#a9a9a9;}
 
-        .content01{margin-top:50px;}
         .stock h4{margin-bottom:40px;}
         .stock h5{font-size:40px;margin-bottom:30px;}
         .stock h5 span{color:red;font-size:30px;}
@@ -63,9 +69,16 @@
         #tech{background-image:url('images/tech.jpg');}
         #social{background-image:url('images/social.png');}
         .tech #tech{color:white;}
-        .footer{}
-        .footer li:first-child{float:left;}
-        .footer li:last-child{float:right;}
+        .footer{margin-bottom:20px;border-top:1px solid #a9a9a9;}
+        .footer_left{float:left}
+        .footer_left span{float:left;margin:10px 15px;}
+        .footer_left span a{font-size:12px;color:#a9a9a9;}
+        .footer_left address{margin:0 15px;font-size:12px;font-style:normal;color:#a9a9a9;}
+        .footer_right{float:right;width:160px;margin-top:20px;border-bottom:2px solid black;padding-bottom:10px;}
+        .footer_right p{font-size:14px;color:#111;}
+        .footer_right p:first-child{float:left;}
+        .footer_right p:last-child{float:right;}
+        
     </style>
 </head>
 <body>
@@ -99,14 +112,14 @@
                 </div>
             </div>
         </header>
-        <!-- <section class="banner">
+        <section class="banner">
             <div class="slider">
                 <div>
                     <img src="images/banner01.png" alt="banner01">
-                    <div class="banner_txt">
+                    <div class="banner_txt row">
                         <p>일상에 필요한 모든것들을 연결하는</p>
                         <p>당신과 가장 가까운 인공지능과 만나보세요.</p>
-                        <div class="banner_btn">
+                        <div class="banner_btn clearfix">
                             <p>자세히</p>
                             <p>></p>
                         </div>
@@ -114,7 +127,7 @@
                 </div>
                 <div>
                     <img src="images/banner02.png" alt="banner02">
-                    <div class="banner_txt">
+                    <div class="banner_txt row">
                         <p>카카오의 세로운 연결을 통해</p>
                         <p>더 세로운 세상을 꿈꿉니다.</p>
                         <div class="banner_btn">
@@ -125,7 +138,7 @@
                 </div>
                 <div>
                     <img src="images/banner03.png" alt="banner03">
-                    <div class="banner_txt">
+                    <div class="banner_txt row">
                         <p>일상에 필요한 모든것들을 연결하는</p>
                         <p>당신과 가장 가까운 인공지능과 만나보세요.</p>
                         <div class="banner_btn">
@@ -146,7 +159,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <section class="content01 sec_cont">
             <ul class="row clearfix">
                 <li>
