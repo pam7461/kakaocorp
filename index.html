@@ -40,8 +40,22 @@
         .lang li:last-child>a{color:#a9a9a9;}
         .lang li:last-child>a:hover{color:#111;}
 
-        .banner{height:200px;background:red;}
-        .content01{height:200px;background:green;}
+        /* .banner{height:760px;margin-top:50px;overflow:hidden;}
+        .banner>.slider{}
+        .banner>.slider>div{position:relative;}
+        .banner>.slider>div>img{}
+        .banner_txt{position:absolute;left:0;top:0;}
+        .banner>.slider>div>.banner_txt>p{}
+        .banner>.slider>div>.banner_txt>.banner_btn{} */
+
+        .content01{margin-top:50px;margin-bottom:50px;}
+        .content01>.row>li{float:left;width:370px;margin:0 15px;}
+        .content01 h4{margin-bottom:20px;font-family:'Roboto';font-size:12px;color:#111;}
+        .content01 h5{margin-bottom:10px;font-size:20px;color:#111;line-height:30px;}
+        .stock h4{margin-bottom:40px;}
+        .stock h5{font-size:40px;margin-bottom:30px;}
+        .stock h5 span{color:red;font-size:30px;}
+        .content01 p{font-size:13px;line-height:20px;color:#a9a9a9;}
         .content02{height:200px;background:blue;}
         .footer{height:200px;background:yellow;}
     </style>
@@ -77,15 +91,78 @@
                 </div>
             </div>
         </header>
-        <section class="banner">
+        <!-- <section class="banner">
             <div class="slider">
-                <div style="text-align:center;font-size:36px;">banner01</div>
-                <div style="text-align:center;font-size:36px;">banner02</div>
-                <div style="text-align:center;font-size:36px;">banner03</div>
-                <div style="text-align:center;font-size:36px;">banner04</div>
+                <div>
+                    <img src="images/banner01.png" alt="banner01">
+                    <div class="banner_txt">
+                        <p>일상에 필요한 모든것들을 연결하는</p>
+                        <p>당신과 가장 가까운 인공지능과 만나보세요.</p>
+                        <div class="banner_btn">
+                            <p>자세히</p>
+                            <p>></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/banner02.png" alt="banner02">
+                    <div class="banner_txt">
+                        <p>카카오의 세로운 연결을 통해</p>
+                        <p>더 세로운 세상을 꿈꿉니다.</p>
+                        <div class="banner_btn">
+                            <p>자세히</p>
+                            <p>></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/banner03.png" alt="banner03">
+                    <div class="banner_txt">
+                        <p>일상에 필요한 모든것들을 연결하는</p>
+                        <p>당신과 가장 가까운 인공지능과 만나보세요.</p>
+                        <div class="banner_btn">
+                            <p>자세히</p>
+                            <p>></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/banner04.png" alt="banner04">
+                    <div class="banner_txt">
+                        <p>일상에 필요한 모든것들을 연결하는</p>
+                        <p>당신과 가장 가까운 인공지능과 만나보세요.</p>
+                        <div class="banner_btn">
+                            <p>자세히</p>
+                            <p>></p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section> -->
+        <section class="content01">
+            <ul class="row clearfix">
+                <li>
+                    <h4>PRESS RELEASE</h4>
+                    <a href="#">
+                        <h5>카카오엔터프라이즈, LG전자와 전략적<br> 파트너집 체결</h5>
+                    </a>
+                    <a href="#">
+                        <p>- 카카오미니-LG Smart TV 연동, 카카오미니로 TV 기능 제어 및 콘텐츠 검색/추천 가능- AI 기술 활용해 TV를 비롯한 다양한 가전 분야에서 지속적인 협력 기대[2020-03-11] 카카...</p>
+                    </a>
+                </li>
+                <li class="stock">
+                    <h4>STOCK</h4>
+                    <h5>155,000 <span>▼ 4,000</span></h5>
+                    <p>2020-03-16 10:43:39</p>
+                </li>
+                <li>
+                    <h4>PRIVACY POLICY</h4>
+                    <a href="#">
+                        <h5>카카오는 데이터의 연결과 보호의 균형을 위해 언제나 최선을 다 하겠습니다.</h5>
+                    </a>
+                </li>
+            </ul>
         </section>
-        <section class="content01"></section>
         <section class="content02"></section>
         <footer class="footer"></footer>
     </div>
