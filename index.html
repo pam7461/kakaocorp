@@ -47,17 +47,25 @@
         .banner_txt{position:absolute;left:0;top:0;}
         .banner>.slider>div>.banner_txt>p{}
         .banner>.slider>div>.banner_txt>.banner_btn{} */
+        .sec_cont{margin-bottom:50px;}
+        .sec_cont>.row>li{float:left;width:370px;margin:0 15px;}
+        .sec_cont h4{margin-bottom:20px;font-family:'Roboto';font-size:12px;color:#111;}
+        .sec_cont h5{margin-bottom:10px;font-size:20px;color:#111;line-height:30px;}
+        .sec_cont p{font-size:13px;line-height:20px;color:#a9a9a9;}
 
-        .content01{margin-top:50px;margin-bottom:50px;}
-        .content01>.row>li{float:left;width:370px;margin:0 15px;}
-        .content01 h4{margin-bottom:20px;font-family:'Roboto';font-size:12px;color:#111;}
-        .content01 h5{margin-bottom:10px;font-size:20px;color:#111;line-height:30px;}
+        .content01{margin-top:50px;}
         .stock h4{margin-bottom:40px;}
         .stock h5{font-size:40px;margin-bottom:30px;}
         .stock h5 span{color:red;font-size:30px;}
-        .content01 p{font-size:13px;line-height:20px;color:#a9a9a9;}
-        .content02{height:200px;background:blue;}
-        .footer{height:200px;background:yellow;}
+
+        .content02 h4{box-sizing:border-box;height:200px;padding:15px;background-size:cover;background-position:center;}
+        #service{background-image:url('images/service.jpg');}
+        #tech{background-image:url('images/tech.jpg');}
+        #social{background-image:url('images/social.png');}
+        .tech #tech{color:white;}
+        .footer{}
+        .footer li:first-child{float:left;}
+        .footer li:last-child{float:right;}
     </style>
 </head>
 <body>
@@ -139,7 +147,7 @@
                 </div>
             </div>
         </section> -->
-        <section class="content01">
+        <section class="content01 sec_cont">
             <ul class="row clearfix">
                 <li>
                     <h4>PRESS RELEASE</h4>
@@ -163,8 +171,68 @@
                 </li>
             </ul>
         </section>
-        <section class="content02"></section>
-        <footer class="footer"></footer>
+        <section class="content02 sec_cont">
+            <ul class="row clearfix">
+                <li>
+                    <a href="#">
+                        <h4 id="service">SERVICE</h4>
+                    </a>
+                    <a href="#">
+                        <h5>언제 어디서나 무료로 간편하게! 사람과 세상, 그 이상을 연결하는 카카오톡</h5>
+                    </a>
+                    <a href="#">
+                        <p>채팅은 물론 일정 관리, 송금, #검색 등 다양한 기능을 제공하는 카카오톡은 우리의 생활을 보다 편리하게 만들어 주고 있습니다. 카카오톡을 통해 세상의 정보와 즐길거리에 보다 가까이 ...</p>
+                    </a>
+                </li>
+                <li class="tech">
+                    <a href="#">
+                        <h4 id="tech">TECH</h4>
+                    </a>
+                    <a href="#">
+                        <h5>새로워진 kakao Tech를 소개합니다.</h5>
+                    </a>
+                    <a href="#">
+                        <p>기술 행사와 오픈소스, 후원, 채용 등 카카오의 기술 관련 종합적인 정보를 제공할 수 있도록 개편했습니다....</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h4 id="social">SOCIAL INPACT</h4>
+                    </a>
+                    <a href="#">
+                        <h5>세계 행복의 날 기념, 같이가치 ‘안녕하세요’ 캠페인을 소개합니다!</h5>
+                    </a>
+                    <a href="#">
+                        <p>'세계 행복의 날'이라는 기념일을 들어보신 적 있나요? 2012년 국제연합(UN)이 모든 사람들이 행복하게 살 수 있도록 전 세계가 함께 노력하자는 취지로 매년 3월 20일을 '세계 ...</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <footer class="footer">
+            <ul class="row clearfix">
+                <li class="footer_left">
+                    <div class="clearfix">
+                        <span><a href="#">이용약관</a></span>
+                        <span><a href="#">위치기반서비스이용약관</a></span>
+                        <span><a href="#">개인정보처리방침</a></span>
+                        <span><a href="#">운영정책</a></span>
+                        <span><a href="#">청소년보호정책</a></span>
+                        <span><a href="#">권리침해신고안내</a></span>
+                        <span><a href="#">공지사항</a></span>
+                        <span><a href="#">사이버윤리실</a></span>
+                    </div>
+                    <div>
+                        <address>
+                            Copyright © Kakao Corp. All rights reserved.
+                        </address>
+                    </div>
+                </li>
+                <li class="footer_right clearfix">
+                    <p>관련사이트</p>
+                    <p>+</p>
+                </li>
+            </ul>
+        </footer>
     </div>
 </body>
 </html>
